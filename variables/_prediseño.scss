@@ -1,0 +1,16 @@
+@mixin jumbo ($bkposition, $bksize, $hgt) {
+    background-position: $bkposition;
+    background-size: $bksize;
+    height: $hgt;
+}
+
+@mixin redes ($txtal, $fntsz) {
+    text-align: $txtal ;
+    font-size: $fntsz;
+}
+
+@mixin carousel ($wth, $hgt, $xhgt) {
+    width: $wth;
+    height: $hgt;
+    max-height: $xhgt;
+}

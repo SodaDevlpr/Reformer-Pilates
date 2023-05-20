@@ -1,0 +1,251 @@
+@import "variables/paletas";
+@import "variables/prediseño";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    cursor: pointer;
+  }
+  
+  /* Index */
+  header {
+    background-color: map-get($map: $paleta, $key:"color3" );
+    width: 100%;
+    font-size: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 20px;
+  }
+  
+  .navbar-collapse {
+    z-index: 1000;
+  }
+
+  .jumbotron {
+    @include jumbo ( center, cover, 450px);
+    background-image: url(Imagenes/estudio.jpeg);
+    margin-top: 25px;
+  }
+  
+    .jumbotron1 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: map-get($map: $paleta, $key:"color3" );
+      text-align: center;
+      font-size: 60px; 
+	    font-weight: bold; 
+	    text-shadow: 5px 5px 6px rgba(0, 0, 0, 1) ; 
+	    -webkit-text-shadow: 5px 5px 6px rgba(0, 0, 0, 1) ; 
+	    -moz-text-shadow: 5px 5px 6px rgba(0, 0, 0, 1) ;
+      
+      @media only screen and (max-width: 374px){
+        font-size: 50px;
+      }
+    }
+  
+  /* end index */
+  /* common social network */
+
+  .redes {
+    @include redes (center, 40px);
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+    .redes i {
+      color: map-get($map: $paleta, $key:"color1" );
+    }
+  
+    .redes i:hover {
+      color: map-get($map: $paleta, $key:"color2" );
+    }
+  
+    .facebook {
+      padding-left: 20px;
+    }
+  
+  /* end common social network */
+  /* Galeria */
+  .galerias {
+    padding-left: 20px;
+  }
+  
+  .carousel1 img {
+    @include carousel (100%, 400px, 500px);
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding-right: 20px;
+  }
+
+    .carousel1 ul li {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-left: 15px;
+    }
+  
+  .videos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+    .videos1 h6 {
+      text-align: center;
+    }
+  
+    .videos1 iframe {
+      padding: 20px;
+    }
+  
+  /* end Galeria */
+  /* Nosotros */
+
+  .venta{
+    background-size: cover;
+    
+  }
+
+  .nos {
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  
+    .alinear {
+      text-align: center;
+      padding: 20px 20px 20px;
+    }
+  
+  /* end Nosotros */
+  .linea {
+    height: 5px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    width: auto;
+    border-top: 2px solid map-get($map: $paleta, $key:"color1" );
+  }
+  
+  main {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding-left: 20px;
+  }
+  
+  /* Preguntas */
+  .pre {
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  
+  /* end Preguntas */
+  /* Contacto */
+  body .contacto {
+    height: 100%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+    .form1 {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: map-get($map: $paleta, $key:"color1" );
+      font-size: none;
+    }
+  
+    .form2 {
+      font-size: 16px;
+      text-align: center;
+      padding-bottom: 30px;
+      color: map-get($map: $paleta, $key:"color1" );
+      padding-right: 20px;
+    }
+  
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 20px;
+    }
+  
+    input {
+      background-color: map-get($map: $paleta, $key:"color3" );
+      width: 300px;
+      min-width: 300px;
+      height: 40px;
+      border-radius: 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: map-get($map: $paleta, $key:"color4" );
+      margin-right: 20px;
+    }
+  
+    textarea {
+      background-color: map-get($map: $paleta, $key:"color3" );
+      width: 300px;
+      height: 150px;
+      border-radius: 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: map-get($map: $paleta, $key:"color4" );
+      margin-top: 10px;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      padding-top: 15px;
+    }
+  
+    .buttoncon {
+      height: 45px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      text-transform: uppercase;
+      background-color: map-get($map: $paleta, $key:"color3" );
+      border-color: map-get($map: $paleta, $key:"color1" );
+      border-style: solid;
+      border-radius: 10px;
+      width: 300px;
+      cursor: pointer;
+    }
+  
+    .buttoncon p {
+      color: map-get($map: $paleta, $key:"color1" );
+      border-radius: 10px;
+    }
+  
+    .buttoncon :hover {
+      background-color: map-get($map: $paleta, $key:"color5" );
+      width: 100%;
+      height: 100%;
+      padding: 13px;
+      transition: 0.3s;
+      color: map-get($map: $paleta, $key:"color3" );
+    }
+  
+      .aviso {
+      font-size: 13px;
+      color: #a70f0f;
+    }
+  
+      span {
+        color: map-get($map: $paleta, $key:"color1" );
+      }  
+  
+  /* end Contacto */
+  html,
+  body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  
+  .embed-responsive-item {
+    padding-right: 20px !important;
+  }
+  
+  .container-fluid {
+    padding-left: 0%;
+  }
+  
+  .bg-light {
+    background-color: transparent !important;
+  }
+
